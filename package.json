@@ -1,0 +1,16 @@
+{
+  "name": "studywork",
+  "version": "1.0.0",
+  "description": "StudyWork — лендинг с админкой вакансий",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

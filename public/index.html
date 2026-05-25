@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyWork — Работа для студентов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero__left">
+      <h1 class="hero__title">Начни карьеру с <span class="text-blue">StudyWork</span></h1>
+      <p class="hero__text">
+        Найди работу, которая соответствует твоим целям. StudyWork — платформа, которая помогает раскрыть твой потенциал и построить успешную карьеру.
+      </p>
+      <p class="hero__text">
+        Ты можешь долго искать «идеальный момент». Или начать <a href="https://www.studywork.kz" class="link">сейчас</a> — с StudyWork. Первые шаги в карьере решают больше, чем кажется. <a href="https://www.studywork.kz" class="link">Сделай их правильно</a>.
+      </p>
+    </div>
+    <div class="hero__right">
+      <div class="hero__brand hero__brand--small">
+        <img src="assets/logo.svg" alt="" class="hero__logo" width="40" height="40">
+        <div class="hero__brand-text">
+          <strong>STUDYWORK</strong>
+          <span>Работа для студентов</span>
+        </div>
+      </div>
+      <h2 class="hero__headline">ПОДРАБОТКА<br>ДЛЯ СТУДЕНТОВ</h2>
+      <div class="hero__center">
+        <img src="assets/logo.svg" alt="StudyWork" class="hero__logo hero__logo--large" width="80" height="80">
+        <div class="hero__brand-text hero__brand-text--center">
+          <strong>STUDYWORK</strong>
+          <span>Работа для студентов</span>
+        </div>
+        <div class="hero__qr">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://www.studywork.kz" alt="QR-код StudyWork" width="180" height="180">
+        </div>
+      </div>
+      <div class="hero__person" aria-hidden="true"></div>
+      <div class="hero__wave">
+        <a href="https://www.studywork.kz" class="hero__url">www.studywork.kz</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features__inner">
+      <div class="features__col">
+        <h2 class="section-title"><span>Популярные</span> <span class="text-blue">вакансии</span></h2>
+        <ul class="vacancy-list" id="vacancy-list">
+          <li class="vacancy-list__loading">Загрузка…</li>
+        </ul>
+      </div>
+      <div class="features__col">
+        <h2 class="section-title"><span>Как</span> <span class="text-blue">начать</span> <span>работать?</span></h2>
+        <ol class="steps">
+          <li class="steps__item">
+            <span class="steps__icon" aria-hidden="true">👤</span>
+            <span class="steps__label">Зарегистрируйся</span>
+          </li>
+          <li class="steps__item">
+            <span class="steps__icon" aria-hidden="true">✈</span>
+            <span class="steps__label">Найди вакансию</span>
+          </li>
+          <li class="steps__item">
+            <span class="steps__icon" aria-hidden="true">🔍</span>
+            <span class="steps__label">Откликнись</span>
+          </li>
+        </ol>
+        <div class="bonus">
+          <span class="bonus__icon" aria-hidden="true">🎁</span>
+          <span class="bonus__text">Бонус для новых пользователей!</span>
+        </div>
+      </div>
+      <div class="features__col">
+        <h2 class="section-title"><span>Почему</span> <span class="text-blue">мы?</span></h2>
+        <ul class="benefits">
+          <li class="benefits__item">
+            <span class="benefits__icon">🕐</span>
+            <div class="benefits__text">
+              <strong>Гибкий график</strong>
+              <span>Сочетай с учебой</span>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <span class="benefits__icon">💰</span>
+            <div class="benefits__text">
+              <strong>Совмещай доход</strong>
+              <span>Зарабатывай на своих условиях</span>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <span class="benefits__icon">⭐</span>
+            <div class="benefits__text">
+              <strong>Проверенные вакансии</strong>
+              <span>Только надежные работодатели</span>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <span class="benefits__icon">🔔</span>
+            <div class="benefits__text">
+              <strong>Удобный поиск</strong>
+              <span>Фильтры по графику, оплате и типу работы</span>
+            </div>
+          </li>
+          <li class="benefits__item">
+            <span class="benefits__icon">👥</span>
+            <div class="benefits__text">
+              <strong>Клиентская база</strong>
+              <span>Более 5000 уже работают</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer class="features__footer">
+      <p class="features__footer-text">1000+ ВАКАНСИЙ</p>
+      <button type="button" class="footer-admin-btn" id="footer-admin-btn">Вход для администратора</button>
+    </footer>
+  </section>
+
+  <button type="button" class="admin-fab" id="open-admin" title="Вход для администратора" aria-label="Вход для администратора">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/>
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 8 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 8a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 8 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 8c.38.49.6 1.09.6 1.71s-.22 1.22-.6 1.71Z" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </button>
+
+  <div class="admin-modal" id="admin-modal" hidden>
+    <div class="admin-modal__dialog" role="dialog" aria-labelledby="admin-modal-title" aria-modal="true">
+      <button type="button" class="admin-modal__close" id="close-admin-modal" aria-label="Закрыть">×</button>
+
+      <div id="admin-login-view">
+        <h2 id="admin-modal-title" class="admin-modal__title">Вход в админку</h2>
+        <p class="admin-modal__hint">Управление списком «Популярные вакансии» на сайте</p>
+        <form id="home-login-form" class="admin__form">
+          <label>
+            Пароль
+            <input type="password" id="home-password" required autocomplete="current-password">
+          </label>
+          <button type="submit" class="btn btn--primary">Войти</button>
+        </form>
+        <p id="home-login-error" class="admin__error" hidden></p>
+      </div>
+
+      <div id="admin-panel-view" hidden>
+        <div class="admin-modal__head">
+          <h2 class="admin-modal__title">Управление вакансиями</h2>
+          <button type="button" class="btn btn--ghost" id="home-logout">Выйти</button>
+        </div>
+        <form id="home-add-form" class="admin__form admin__form--inline">
+          <label>
+            Новая вакансия
+            <input type="text" placeholder="Например: Курьер" required>
+          </label>
+          <button type="submit" class="btn btn--primary">Добавить</button>
+        </form>
+        <ul id="home-admin-list" class="admin-list"></ul>
+        <p id="home-panel-message" class="admin__message" hidden></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/admin-panel.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

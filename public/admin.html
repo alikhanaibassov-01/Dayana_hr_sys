@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админка — StudyWork</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-body">
+  <main class="admin">
+    <header class="admin__header">
+      <h1>Админка вакансий</h1>
+      <a href="/" class="admin__back">← На сайт</a>
+    </header>
+
+    <section id="login-section" class="admin__card">
+      <h2>Вход</h2>
+      <p class="admin__hint">Пароль по умолчанию: <code>studywork2024</code> (можно сменить через переменную ADMIN_PASSWORD)</p>
+      <form id="login-form" class="admin__form">
+        <label>
+          Пароль
+          <input type="password" id="password" required autocomplete="current-password">
+        </label>
+        <button type="submit" class="btn btn--primary">Войти</button>
+      </form>
+      <p id="login-error" class="admin__error" hidden></p>
+    </section>
+
+    <section id="panel-section" class="admin__card" hidden>
+      <form id="add-form" class="admin__form admin__form--inline">
+        <label>
+          Новая вакансия
+          <input type="text" id="new-title" placeholder="Например: Курьер" required>
+        </label>
+        <button type="submit" class="btn btn--primary">Добавить</button>
+      </form>
+
+      <ul id="admin-list" class="admin-list"></ul>
+      <p id="panel-message" class="admin__message" hidden></p>
+    </section>
+  </main>
+
+  <script src="js/auth.js"></script>
+  <script src="js/admin-panel.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
